@@ -1,0 +1,16 @@
+#include <iostream>
+
+using namespace std;
+
+int wieksza(int a, int b)
+{
+    if (a>b)
+        cout<<a<<endl;
+    else
+        cout<<b<<endl;
+}
+
+int main()
+{
+    wieksza(30, 300);
+}
