@@ -1,0 +1,19 @@
+#include <iostream>
+
+using namespace std;
+
+int sumaDzielnikow(int n)
+{
+    int a=0;
+    for(int i=1; i<n; i++)
+    {
+        if(n%i==0)
+            a=a+i;
+    }
+    cout<<a;
+}
+
+int main()
+{
+    sumaDzielnikow(125);
+}
