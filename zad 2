@@ -1,0 +1,21 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int c = 100;
+    while (c>0)
+    {
+    if (c%3!=0)
+    {
+        cout << c <<" ";
+        c--;
+    }
+    else
+    {
+        cout << c-1 <<" ";
+        c=c-2;
+    }
+    }
+}
