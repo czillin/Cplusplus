@@ -1,0 +1,15 @@
+#include <iostream>
+
+using namespace std;
+
+void ciag(int p, int r, int n)
+{
+    for(int i=0; i<=n; i++)
+        cout<<p+r*i<<" ";
+    return;
+}
+
+int main()
+{
+    ciag(2, 2, 10);
+}
