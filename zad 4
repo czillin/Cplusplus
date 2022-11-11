@@ -1,0 +1,19 @@
+#include <iostream>
+
+using namespace std;
+
+int pytajOWiek()
+{
+    int w;
+    cout<<"Podaj wiek: ";
+    cin>>w;
+    while (w<0){
+        cout<<"Podaj wiek: ";
+        cin>>w;
+    }
+    cout<<"Masz "<<w<<" lat.";
+}
+int main()
+{
+    pytajOWiek();
+}
