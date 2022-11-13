@@ -1,0 +1,20 @@
+#include <iostream>
+
+using namespace std;
+
+int pierwiastki(double a, double b, double c)
+{
+    int d=b*b-4*a*c;
+
+    if(d<0)
+        cout<<"liczba pierwiastkow = 0"<<endl;
+    else if(d>0)
+        cout<<"liczba pierwiastkow = 2"<<endl;
+    else
+        cout<<"liczba pierwiastkow = 1"<<endl;
+}
+
+int main()
+{
+    pierwiastki(3, 4, 7);
+}
