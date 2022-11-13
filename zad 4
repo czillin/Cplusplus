@@ -1,0 +1,26 @@
+#include <iostream>
+
+using namespace std;
+
+int dwumian(int n, int k)
+{
+    int a=n-k;
+    for(int i=n-1; i>0; i--)
+        n=n*i;
+
+    for(int i=k-1; i>0; i--)
+        k=k*i;
+
+    for(int i=a-1; i>0; i--)
+        a=a*i;
+    if(a==0){
+        cout<<"1"<<endl;
+        return 0;
+    }
+    cout<<n/(k*a)<<endl;
+}
+
+int main()
+{
+    dwumian(12, 10);
+}
