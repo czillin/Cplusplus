@@ -1,0 +1,19 @@
+#include <iostream>
+
+using namespace std;
+
+int najmniejszyNieDzielnik(int n)
+{
+    for(int i=1; i<=n; i++)
+    {
+        if(n%i!=0){
+            cout<<i<<endl;
+            break;
+        }
+    }
+}
+
+int main()
+{
+    najmniejszyNieDzielnik(12);
+}
