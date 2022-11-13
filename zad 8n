@@ -1,0 +1,22 @@
+#include <iostream>
+
+using namespace std;
+
+void trojkatyProstokatne(int n)
+{
+    int a=1, b=1;
+    while(a<n)
+    {
+        for(int i=1; i<n; i++)
+        {
+            b=a*a+i*i;
+            cout<<a<<" "<<i<<" "<<b<<endl;
+        }
+        a++;
+    }
+}
+
+int main()
+{
+    trojkatyProstokatne(17);
+}
