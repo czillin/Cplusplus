@@ -1,0 +1,22 @@
+#include <iostream>
+
+using namespace std;
+
+int pierwiastek(int n)
+{
+    int a;
+    for(int i=1; i<n; i++)
+    {
+        if(i*i<=n)
+        a=i;
+    }
+    cout<<a;
+}
+
+int main()
+{
+    int o;
+    cout<<"podaj n: ";
+    cin>>o;
+    pierwiastek(o);
+}
