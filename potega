@@ -1,0 +1,14 @@
+#include <iostream>
+
+using namespace std;
+
+int potega(int l, int w)
+{
+    if(w==0) return 1;
+    else return l*potega(l, w-1);
+}
+
+int main()
+{
+    cout<<potega(2, 5);
+}
