@@ -1,0 +1,22 @@
+#include <iostream>
+
+using namespace std;
+
+bool cp(char* s)
+{
+    int k;
+    while (s[k]!=0)
+        k++;
+    for (int i=0; i<(k-1-i); i++)
+    {
+        if(s[i] != s[k-1-i])
+            return false;
+    }
+    return true;
+}
+
+int main()
+{
+    char* essa = "kajak";
+    cout<<cp(essa);
+}
