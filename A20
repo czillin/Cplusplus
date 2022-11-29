@@ -1,0 +1,21 @@
+#include <iostream>
+
+using namespace std;
+
+bool a(int* t, int k)
+{
+    int r;
+    r = t[1]-t[0];
+    for(int i=2; i<k; i++)
+    {
+        if(t[i]-t[i-1]!=r)
+            return false;
+    }
+    return true;
+}
+
+int main()
+{
+    int tablica[] = {5, 10, 15, 20, 25};
+    cout<<a(tablica, 5);
+}
