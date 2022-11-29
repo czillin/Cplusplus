@@ -1,0 +1,21 @@
+#include <iostream>
+
+using namespace std;
+
+void przesun(int* t, int rozmiar)
+{
+    int c=t[rozmiar-1];
+    for(int i=(rozmiar-1); i>0; i--)
+    {
+        t[i]=t[i-1];
+    }
+    t[0]=c;
+    for(int i=0; i<rozmiar; i++)
+        cout<<t[i];
+}
+
+int main()
+{
+    int tablica[]={9, 8, 7, 6, 5, 4, 3, 2, 1};
+    przesun(tablica, 9);
+}
