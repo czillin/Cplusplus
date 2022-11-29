@@ -1,0 +1,27 @@
+#include <iostream>
+
+using namespace std;
+
+void kolejnosc(int* t, int r)
+{
+  for(int i=1; i<r; i++)
+  {
+    for (int j=r-1; j>=1;j--)
+    {
+     if(t[j]<t[j-1])
+      {
+        int b; b=t[j-1];
+        t[j-1]=t[j];
+        t[j]=b;
+      }
+    }
+  }
+  for(int k=0; k<r; k++)
+    cout<<t[k]<<" ";
+}
+
+int main()
+{
+    int tablica[]={6, 1, 2, 6, 2, 3, 4};
+    kolejnosc(tablica, 7);
+}
