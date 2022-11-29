@@ -1,0 +1,23 @@
+#include <iostream>
+
+using namespace std;
+
+void b(string s)
+{
+    int d = s.length();
+    int j=0;
+    while(j<=d)
+    {
+        for(int i=1; i<=j+1; i++)
+        {
+            cout<<s[j];
+        }
+        j++;
+    }
+}
+
+int main()
+{
+    string p = "ABCDE";
+    b(p);
+}
