@@ -1,0 +1,20 @@
+#include <iostream>
+
+using namespace std;
+
+int pierwszy(int* t, int rozmiar)
+{
+    int najwieksza=t[0];
+    for(int i=1; i<rozmiar; i++)
+    {
+        if(t[i]>najwieksza)
+            najwieksza=t[i];
+    }
+    return najwieksza;
+}
+
+int main()
+{
+    int tablica[]={1, 2, 3, 4, 3, 2, 1, 5};
+    cout<<pierwszy(tablica, 8);
+}
