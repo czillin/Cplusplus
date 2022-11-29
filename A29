@@ -1,0 +1,27 @@
+#include <iostream>
+
+using namespace std;
+
+void g(string s)
+{
+    int d = s.length();
+    for(int i=0; i<(d-1); i++)
+    {
+        if(s[i]=='A' && s[i+1]=='B'){
+            s[i]='*';
+            for(int j=i; j<d; j++)
+            {
+                s[j+1]=s[j+2];
+            }
+            d--;
+            s[d]=0;
+        }
+    }
+    cout<<s;
+}
+
+int main()
+{
+    string bes = "ABCDEFABBA";
+    g(bes);
+}
